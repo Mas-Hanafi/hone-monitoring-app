@@ -1,0 +1,25 @@
+node_modules
+dist
+dev-dist
+.env
+.env.*
+!.env.example
+*.local
+
+# Kunci dan rahasia
+kunci*.json
+service-account*.json
+secrets.env
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+
+# Kunci service account Google (jangan di-commit)
+hone-park-monitoring-*.json
+*.zip
+ME Daily Routine/
+Daftar Akun*.txt
+
+.impeccable/

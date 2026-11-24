@@ -1,0 +1,28 @@
+{
+  "name": "monitoring-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "deploy": "npm run build && npx wrangler@4 deploy -c deploy/wrangler.jsonc",
+    "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning tests/db.test.mjs && node --experimental-strip-types --disable-warning=ExperimentalWarning tests/sheet.test.mjs && node --experimental-strip-types --disable-warning=ExperimentalWarning tests/invite.test.mjs && node --experimental-strip-types --disable-warning=ExperimentalWarning tests/stats.test.mjs && node --experimental-strip-types --disable-warning=ExperimentalWarning tests/cleanup.test.mjs && node --experimental-strip-types --disable-warning=ExperimentalWarning tests/report.test.mjs && node --experimental-strip-types --disable-warning=ExperimentalWarning tests/queue.test.mjs && node --experimental-strip-types --disable-warning=ExperimentalWarning tests/push.test.mjs && node --experimental-strip-types --disable-warning=ExperimentalWarning tests/routine.test.mjs && node --experimental-strip-types --disable-warning=ExperimentalWarning tests/archive.test.mjs && node --experimental-strip-types --disable-warning=ExperimentalWarning tests/logbook.test.mjs && node --experimental-strip-types --disable-warning=ExperimentalWarning tests/activity.test.mjs && node --experimental-strip-types --disable-warning=ExperimentalWarning tests/pdf.test.mjs && node --experimental-strip-types --disable-warning=ExperimentalWarning tests/archivelog.test.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.9",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.15",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.6",
+    "vite-plugin-pwa": "^2.0.0"
+  }
+}
