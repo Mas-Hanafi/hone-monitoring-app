@@ -13,7 +13,7 @@ npm install
 npm test
 ```
 
-`npm test` menjalankan 274 pengecekan (skema di Postgres lokal, fungsi undangan, sinkron Sheet, hapus foto, hitungan dashboard, CSV dan laporan, antrean offline, notifikasi dan push). Semua harus lulus.
+`npm test` menjalankan 597 pengecekan (14 file) (skema di Postgres lokal, fungsi undangan, sinkron Sheet, hapus foto, hitungan dashboard, CSV dan laporan, antrean offline, notifikasi dan push). Semua harus lulus.
 Ini tidak menggantikan uji di Supabase asli (langkah 9).
 
 ## 1. Buat proyek Supabase
