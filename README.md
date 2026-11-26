@@ -42,7 +42,7 @@ supabase/
   bulk_users.sql  create many accounts at once (sample addresses only)
 apps-script/      Google Apps Script for Drive uploads
 tests/            14 test files
-DEPLOY.md         step by step deploy guide (Indonesian)
+DEPLOY.md         step by step deploy guide
 ```
 
 ## Run it
