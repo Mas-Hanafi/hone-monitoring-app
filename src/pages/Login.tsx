@@ -26,7 +26,7 @@ export function Login() {
     <main className="login">
       <form onSubmit={handleSubmit}>
         <h1 className="logo">
-          <img src="/logo.webp" width="296" height="198" alt="H One Monitoring Apps" />
+          <picture><source srcSet="/hone-wordmark-white.svg" media="(prefers-color-scheme: dark)" /><img src="/hone-wordmark-black.svg" width="240" height="69" alt="H One Monitoring Apps" /></picture>
         </h1>
         <label className="field" htmlFor="email">Email</label>
         <input id="email" type="email" autoComplete="username" required value={email}

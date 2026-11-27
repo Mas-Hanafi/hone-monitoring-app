@@ -34,7 +34,7 @@ export default function App() {
     navRef.current?.querySelector('button.on')?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
   }, [tab, profile?.id])
 
-  if (loading) return <div className="center" role="status" aria-label="Memuat"><img className="pulse" src="/logo.webp" width="190" height="127" alt="" /></div>
+  if (loading) return <div className="center" role="status" aria-label="Memuat"><picture><source srcSet="/hone-wordmark-white.svg" media="(prefers-color-scheme: dark)" /><img className="pulse" src="/hone-wordmark-black.svg" width="190" height="55" alt="" /></picture></div>
   if (!session) return <Login />
   if (needsPassword) return <SetPassword />
   if (!profile) {

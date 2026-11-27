@@ -1,3 +1,10 @@
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/brand/hone-wordmark-white.svg">
+    <img src="docs/brand/hone-wordmark-black.svg" alt="H'ONE" height="48">
+  </picture>
+</p>
+
 # H One monitoring app
 
 A mobile-first web app for tracking work in a hospitality operation: who owes what, by when, how far along it is, and who signed it off. It also runs the recurring inspection checklists and the shift logbook for the engineering team.
@@ -66,7 +73,7 @@ To run the app itself you need a Supabase project. Copy `.env.example` to `.env.
 | `GANTI_DENGAN_ID_FOLDER_DRIVE` | Drive folder id in `apps-script/Code.gs` |
 | `manager1@contoh.com` and similar | sample accounts in `supabase/bulk_users.sql` |
 
-The logo, the letterhead image and the app icons are text placeholders. Replace the files in `public/` and `src/assets/kop/`.
+The logo and app icons are the H'ONE brand (copied from the brand kit). The letterhead line image is a placeholder. To use your own brand, replace the files in `public/` and `src/assets/kop/`. The H'ONE name and logo are not covered by the MIT license; forks should use their own.
 
 ## Status and limits
 

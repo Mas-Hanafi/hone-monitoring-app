@@ -92,7 +92,7 @@ textarea, input[type='email'], input[type='password'] {
 .login form { width: min(360px, 100%); display: grid; gap: 4px; }
 .login h1 { font-size: 22px; margin: 0 0 12px; }
 .login h1.logo { margin: 0 0 8px; text-align: center; line-height: 0; }
-.login h1.logo img { width: min(300px, 80%); height: auto; } /* PNG transparan: menyatu dengan tema terang/gelap */
+.login h1.logo img { width: min(240px, 70%); height: auto; margin: 14px 0 10px; } /* wordmark hitam/putih mengikuti tema (picture + prefers-color-scheme) */
 .login .primary { margin-top: 12px; }
 
 /* Navigasi tab (SPV/Manager) */
