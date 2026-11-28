@@ -9,7 +9,7 @@
 
 A mobile-first web app for tracking work in a hospitality operation: who owes what, by when, how far along it is, and who signed it off. It also runs the recurring inspection checklists and the shift logbook for the engineering team.
 
-It was built for a resort operations team and has been used in the field. This repository is the cleaned version, with the company's name, contacts and accounts replaced by placeholders.
+It runs the daily operations of Drini Park and Drini Park Resort in Indonesia. This repository is the open-source copy of that app, with the company's name, contacts, accounts and data replaced by placeholders.
 
 ## What it does
 
@@ -78,6 +78,7 @@ The logo and app icons are the H'ONE brand (copied from the brand kit). The lett
 ## Status and limits
 
 - The schema was installed on a real Supabase project and checked there with database level and HTTP level scripts. `DEPLOY.md` lists them.
-- Not tested on real hardware or services: push delivery to phones (iPhone in particular), invitation emails, writing to Google Sheets, and the offline queue on an actual iPhone.
+- In production at Drini Park and Drini Park Resort, where staff use it every day on their phones: tasks, routine checklists, the logbook, push notifications and the offline queue.
+- The production deployment lives in a private repository with the company's own configuration. This copy shares its code but is not deployed anywhere itself.
 - The offline queue sends only while the app is open. There is no background sync.
 - The deploy guide and the interface are in Indonesian.
